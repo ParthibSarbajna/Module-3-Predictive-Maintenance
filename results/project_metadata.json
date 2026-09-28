@@ -1,0 +1,31 @@
+{
+    "dataset": "jskswamy/predictive-maintenance-data",
+    "features": [
+        "Engine RPM",
+        "Lub Oil Pressure",
+        "Fuel Pressure",
+        "Coolant Pressure",
+        "Lub Oil Temp",
+        "Coolant Temp"
+    ],
+    "target": "Engine Condition",
+    "target_definition": {
+        "0": "Normal / Healthy",
+        "1": "Maintenance Required / Faulty"
+    },
+    "selected_model": "Random Forest",
+    "random_forest_metrics": {
+        "Accuracy": 0.6511389813155875,
+        "Precision": 0.7348420153714774,
+        "Recall": 0.6987413723101908,
+        "F1 Score": 0.7163371488033299,
+        "ROC-AUC": 0.6883251625441578
+    },
+    "xgboost_metrics": {
+        "Accuracy": 0.6588175070386486,
+        "Precision": 0.6967270194986073,
+        "Recall": 0.8124238733252132,
+        "F1 Score": 0.7501405810684161,
+        "ROC-AUC": 0.6860462827689133
+    }
+}

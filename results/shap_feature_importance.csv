@@ -1,0 +1,7 @@
+Feature,Mean Absolute SHAP
+Engine RPM,0.5803694
+Fuel Pressure,0.271402
+Lub Oil Temp,0.2129758
+Lub Oil Pressure,0.1888995
+Coolant Pressure,0.11806247
+Coolant Temp,0.09426608

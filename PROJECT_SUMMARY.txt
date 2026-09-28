@@ -1,0 +1,34 @@
+﻿PROJECT SUMMARY
+
+The Predictive Maintenance and Vehicle Health Monitoring System is an AI/ML-based solution designed to predict potential engine faults and monitor the overall health condition of a vehicle using sensor data.
+
+The system uses real engine sensor parameters such as Engine RPM, Lubricating Oil Pressure, Fuel Pressure, Coolant Pressure, Lubricating Oil Temperature, and Coolant Temperature. These parameters are processed and provided to machine learning models to identify whether the engine is operating under a normal condition or requires maintenance.
+
+Two machine learning algorithms, Random Forest and XGBoost, are implemented and evaluated using standard classification metrics such as Accuracy, Precision, Recall, F1-Score, and ROC-AUC. The model with the better ROC-AUC performance is selected as the deployed predictive model.
+
+To improve model transparency, SHAP (SHapley Additive exPlanations) is used to identify the sensor parameters that contribute most significantly to the model's prediction. This provides an explainable view of the factors influencing the predicted engine condition.
+
+The system also converts the predicted failure probability into a Vehicle Health Score ranging from 0 to 100. Based on the failure probability, the vehicle is categorized into four health states:
+
+• NORMAL – Low probability of failure
+• MONITOR – Moderate probability of failure
+• WARNING – High probability of failure
+• CRITICAL – Very high probability of failure
+
+The final system therefore provides three important outputs: predicted engine condition, failure probability, and vehicle health status. This demonstrates how machine learning and explainable AI can be applied to predictive maintenance and vehicle health monitoring.
+
+The project follows the architecture:
+
+Vehicle Sensor Data
+        ↓
+Data Preprocessing
+        ↓
+Machine Learning Model
+        ↓
+Failure Probability
+        ↓
+Vehicle Health Score
+        ↓
+Maintenance Status / Alert
+
+The project was developed using Python and implemented using libraries including Pandas, NumPy, Scikit-learn, XGBoost, SHAP, Matplotlib, and Seaborn. The trained models, processed dataset, prediction results, feature importance information, and other project outputs are also saved for further analysis and deployment.
